@@ -22,3 +22,25 @@
 
 - Add form to **create new task**
 - Implement update/delete functionality
+
+# Day 13 – Task Creation (React + Spring Boot API)
+
+## ✅ What was done:
+
+- Created a form in React with fields:
+  - Task Title
+  - Task Description
+- Handled form submission with axios
+- Sent a POST request to Spring Boot backend
+- Task saved in DB and rendered in frontend UI dynamically
+
+## 📦 Tech Used:
+
+- React with TypeScript and Axios
+- Spring Boot with REST API
+- JSON payload with title, description, completed
+
+## 🔗 Next Steps:
+
+- Implement task update (complete/incomplete)
+- Implement task deletion
