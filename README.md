@@ -44,3 +44,17 @@
 
 - Implement task update (complete/incomplete)
 - Implement task deletion
+
+# Day 14 – React (Delete Task Feature)
+
+## ✅ What was implemented:
+
+- Added a delete button next to each task in the task list
+- On click, calls Spring Boot DELETE API
+- Task is removed from UI after deletion
+
+## 🔗 Axios Function:
+
+```ts
+export const deleteTask = (id: number) => API.delete(`/task/${id}`);
+```

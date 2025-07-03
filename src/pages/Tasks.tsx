@@ -10,8 +10,17 @@ const Tasks = () => {
     api
       .get("/tasks")
       .then((res) => setTasks(res.data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("Delete failed : ", err));
   }, []);
+  const handleDelete = (id: Number) => {
+    api
+      .delete(`/task/${id}`)
+      .then(() => {
+        return api.get("/tasks");
+      })
+      .then((res) => setTasks(res.data))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <>
@@ -40,6 +49,14 @@ const Tasks = () => {
                       minute: "2-digit",
                     })}
                   </p>
+                  <div className="d-flex justify-content-between mt-3">
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => handleDelete(task.id)}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </>
               </div>
             </div>

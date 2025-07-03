@@ -5,8 +5,20 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/tasks">Tasks</Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+          <div className="container-fluid">
+            <Link to="/" className="navbar-brand fs-3 fw-bold">
+              Task Manager
+            </Link>
+          </div>
+          <ul className="navbar-nav flex-row gap-3">
+            <li className="nav-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/tasks">Tasks</Link>
+            </li>
+          </ul>
         </nav>
       </header>
     </>

@@ -3,7 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer>@2025 Task Manager</footer>
+      <footer className="bg-dark text-white py-3 mt-auto text-center">
+        @2025 Task Manager
+      </footer>
     </>
   );
 };
