@@ -58,3 +58,20 @@
 ```ts
 export const deleteTask = (id: number) => API.delete(`/task/${id}`);
 ```
+
+# Day 15 – React: Update Task (PUT Integration)
+
+## ✅ What was implemented
+
+- Added checkbox to toggle task completion status
+- Used Axios PUT request to update task via Spring Boot backend
+- Dynamically updated UI after successful API response
+- Handled optimistic UI updates for better UX
+
+## 🧠 Learning:
+
+- `onChange` with checkbox
+- Working with mapped arrays
+- PUT request structure with Axios
+
+## 📂 Project: Task Manager Frontend
