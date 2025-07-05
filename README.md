@@ -75,3 +75,10 @@ export const deleteTask = (id: number) => API.delete(`/task/${id}`);
 - PUT request structure with Axios
 
 ## 📂 Project: Task Manager Frontend
+
+# Day 16 – React: UX Improvements
+
+## ✅ What was implemented:
+
+- Styled completed tasks visually
+- Handled API error cases

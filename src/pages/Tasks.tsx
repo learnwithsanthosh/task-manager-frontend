@@ -39,9 +39,9 @@ const Tasks = () => {
       <Link to="/createTask" className="btn btn-primary my-3">
         CreateTask
       </Link>
-      <ul>
+      <div className="row">
         {tasks.map((task) => (
-          <li key={task.id} className="col-md-4 mb-4">
+          <div key={task.id} className="col-md-4 mb-4">
             <div className="card h-100 shadow-sm">
               <div className="card-body">
                 <>
@@ -86,9 +86,9 @@ const Tasks = () => {
                 </>
               </div>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </>
   );
 };

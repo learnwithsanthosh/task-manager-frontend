@@ -13,10 +13,14 @@ const Header = () => {
           </div>
           <ul className="navbar-nav flex-row gap-3">
             <li className="nav-item">
-              <Link to="/">Home</Link>
+              <Link to="/" className="nav-link text-light px-0">
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <Link to="/tasks">Tasks</Link>
+              <Link to="/tasks" className="nav-link text-light px-0">
+                Tasks
+              </Link>
             </li>
           </ul>
         </nav>

@@ -11,18 +11,20 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/tasks" element={<Tasks></Tasks>}></Route>
-          <Route
-            path="/createTask"
-            element={
-              <CreateTask
-                onTaskCreated={() => console.log("Task created")}
-              ></CreateTask>
-            }
-          ></Route>
-        </Routes>
+        <main className="flex-grow-1 container py-4">
+          <Routes>
+            <Route path="/" element={<Home></Home>}></Route>
+            <Route path="/tasks" element={<Tasks></Tasks>}></Route>
+            <Route
+              path="/createTask"
+              element={
+                <CreateTask
+                  onTaskCreated={() => console.log("Task created")}
+                ></CreateTask>
+              }
+            ></Route>
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </>
